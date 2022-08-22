@@ -24,4 +24,16 @@ entries:
     urls:
     - https://github.com/gsbraman/stp/releases/download/hogchart-1.0.0/hogchart-1.0.0.tgz
     version: 1.0.0
+  multus-demo:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2022-08-22T20:06:52.98668887Z"
+    description: gRPC-Multus Application
+    digest: d926cf356a8afc12d941e830e8f1b1591828431cb487b6ee94e6b318de3eeb6a
+    icon: https://cncf-branding.netlify.app/img/projects/grpc/horizontal/color/grpc-horizontal-color.png
+    name: multus-demo
+    type: application
+    urls:
+    - https://github.com/gsbraman/stp/releases/download/multus-demo-1.0.0/multus-demo-1.0.0.tgz
+    version: 1.0.0
 generated: "2022-08-22T19:46:24.684253384Z"
