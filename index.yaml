@@ -1,5 +1,17 @@
 apiVersion: v1
 entries:
+  grpc:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2022-08-22T20:03:30.630251153Z"
+    description: gRPC-Multus Application
+    digest: fe68e256a657933c2fbf6e6150180a5c049d241e8246da037e4f19a4443beaa3
+    icon: https://cncf-branding.netlify.app/img/projects/grpc/horizontal/color/grpc-horizontal-color.png
+    name: grpc
+    type: application
+    urls:
+    - https://github.com/gsbraman/stp/releases/download/grpc-1.0.0/grpc-1.0.0.tgz
+    version: 1.0.0
   hogchart:
   - apiVersion: v2
     appVersion: 1.0.0
