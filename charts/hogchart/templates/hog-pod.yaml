@@ -1,0 +1,41 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: grpc-hog
+  labels:
+    app: grpc
+    role: grpc-hog
+spec:
+  restartPolicy: Always
+  containers:
+  - name: hog
+    image: quay.io/sbraman/grpc-thick-server:v1
+    imagePullPolicy: Always
+    resources:
+      requests:
+        memory: "100Mi"
+        cpu: "200m"
+      limits:
+        memory: "200Mi"
+        cpu: "300m"
+    env:
+    - name: GREETER_ENDPOINT
+      value: localhost:50051 
+    - name: GREETER_SEND_MSG
+      value: "/greeter_client"
+    ports:
+    - containerPort: 50051
+    readinessProbe:
+      exec:
+        command: ["/grpc-health-probe", "-addr=:50051"]
+      initialDelaySeconds: 5  
+      timeoutSeconds: 2
+      periodSeconds: 60
+    livenessProbe:
+      exec:
+        command: ["/grpc-health-probe", "-addr=:50051"]
+      initialDelaySeconds: 5  
+      periodSeconds: 10
+      timeoutSeconds: 2
+      successThreshold: 1
+      failureThreshold: 3
