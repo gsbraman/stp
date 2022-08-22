@@ -1,5 +1,17 @@
 apiVersion: v1
-entries: 
+entries:
+  apache:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2022-08-22T20:20:15.858274024Z"
+    description: OpenShift Installation Apache Server
+    digest: 768f4d3de952cc2bb6e23d87ea77f9bfa14b835011f4451c6aee7902cac2f47b
+    icon: https://upload.wikimedia.org/wikipedia/commons/4/45/Apache_HTTP_server_logo_%282016%29.png
+    name: apache
+    type: application
+    urls:
+    - https://github.com/gsbraman/stp/releases/download/apache-1.0.0/apache-1.0.0.tgz
+    version: 1.0.0
   hogchart:
   - apiVersion: v2
     appVersion: 1.0.0
@@ -23,5 +35,17 @@ entries:
     type: application
     urls:
     - https://github.com/gsbraman/stp/releases/download/multus-demo-1.0.0/multus-demo-1.0.0.tgz
+    version: 1.0.0
+  swagger:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2022-08-22T20:20:16.019670044Z"
+    description: Explore the OpenShift 4.11.0 APIs with SwaggerUI
+    digest: 965f2bd2e6703164130f1d3230209e6df0082ddce8b055114f9106c920851ebf
+    icon: https://seeklogo.com/images/S/swagger-logo-A49F73BAF4-seeklogo.com.png
+    name: swagger
+    type: application
+    urls:
+    - https://github.com/gsbraman/stp/releases/download/swagger-1.0.0/swagger-1.0.0.tgz
     version: 1.0.0
 generated: "2022-08-22T19:46:24.684253384Z"
