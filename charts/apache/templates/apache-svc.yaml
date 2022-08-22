@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: apache-service  
+  labels:
+    app: apache-openshift
+    owner: sbraman
+spec:
+  type: ClusterIP
+  selector:
+    app: apache-openshift
+  ports:
+  - name: apache
+    protocol: TCP
+    port: 9090
+    targetPort: 8080
