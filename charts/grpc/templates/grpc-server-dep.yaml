@@ -1,0 +1,48 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grpc-server-deployment
+  labels:
+    app: grpc
+    role: grpc-server
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: grpc
+      role: grpc-server
+  template:  
+    metadata:
+      annotations:
+        k8s.v1.cni.cncf.io/networks: server-red-network                
+      labels:
+        app: grpc
+        role: grpc-server
+    spec:
+      restartPolicy: Always
+      containers:
+      - name: thick-server
+        image: quay.io/sbraman/grpc-thick-server:v1
+        imagePullPolicy: Always
+        resources:
+          requests:
+            memory: "100Mi"
+            cpu: "200m"
+          limits:
+            memory: "200Mi"
+            cpu: "300m"
+        env:
+        - name: GREETER_ENDPOINT
+          value: localhost:50051 
+        - name: GREETER_SEND_MSG
+          value: "/greeter_client"
+        ports:
+        - containerPort: 50051
+        readinessProbe:
+          exec:
+            command: ["/grpc-health-probe", "-addr=:50051"]
+          initialDelaySeconds: 5  
+        livenessProbe:
+          exec:
+            command: ["/grpc-health-probe", "-addr=:50051"]
+          initialDelaySeconds: 5  

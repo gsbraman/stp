@@ -1,0 +1,49 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grpc-client-deployment
+  labels:
+    app: grpc
+    role: grpc-client
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: grpc
+      role: grpc-client
+  template:
+    metadata:
+      annotations:
+        k8s.v1.cni.cncf.io/networks: client-red-network        
+      labels:
+        app: grpc
+        role: grpc-client
+    spec:
+      restartPolicy: Always
+      containers: 
+      - name: thick-client
+        image: quay.io/sbraman/grpc-thick-client:v1
+        imagePullPolicy: Always
+        resources:
+          requests:
+            memory: "100Mi"
+            cpu: "200m"
+          limits:
+            memory: "200Mi"
+            cpu: "300m"
+        env:
+        - name: GREETER_ENDPOINT          
+          #value: grpc-internal-service:30007   # <--- send messages via internal service
+          value: grpc-multus01-service:50051   # <--- send messages via multus secondary interface 
+        readinessProbe:
+          exec:
+            command:
+            - cat
+            - /etc/hosts
+          initialDelaySeconds: 5  
+        livenessProbe:
+          exec:
+            command:
+            - cat
+            - /etc/hosts
+          initialDelaySeconds: 5
