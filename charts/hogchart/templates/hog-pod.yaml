@@ -5,7 +5,7 @@ metadata:
   labels:
     app: grpc
     role: grpc-hog
-    owner: Adam
+    owner: adam
 spec:
   restartPolicy: Always
   containers:
