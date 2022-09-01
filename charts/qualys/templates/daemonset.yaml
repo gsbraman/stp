@@ -35,7 +35,7 @@ spec:
               "--activation-id", "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
               "--customer-id", "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
               "--provider-name", "AUTO",
-              "--log-level", "<optional log level>",
+              "--log-level", "5",
               "--server-uri", "https://qagpublic.qg1.apps.qualys.com/CloudAgent"
             ]
           volumeMounts:
