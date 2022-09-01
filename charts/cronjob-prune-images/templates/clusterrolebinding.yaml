@@ -1,0 +1,14 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  labels:
+    template: cronjob-prune-images
+  name: {{ .Values.namespace }}-image-pruners
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  name: cluster-admin
+  kind: ClusterRole
+subjects:
+- kind: ServiceAccount
+  name: {{ .Values.job_service_account }}
+  namespace: {{ .Values.namespace }}

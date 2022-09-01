@@ -1,0 +1,10 @@
+failed_jobs_history_limit: "5"
+image: quay.io/openshift/origin-cli
+image_prune_keep_tag_revisions: "3"
+image_prune_keep_younger_than: 1h0m0s
+image_tag: 4.4
+job_name: cronjob-prune-images
+job_service_account: image-pruner
+namespace: cluster-ops
+schedule: "0 * * * *"
+success_jobs_history_limit: "5"

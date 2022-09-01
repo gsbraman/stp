@@ -1,0 +1,7 @@
+apiVersion: v2
+appVersion: 1.0.0
+description: Qualys chart
+icon: https://seeklogo.com/images/Q/qualys-logo-4D3DB5E994-seeklogo.com.png
+name: qualys
+type: application
+version: 1.0.0
