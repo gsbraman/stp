@@ -12,6 +12,18 @@ entries:
     urls:
     - https://github.com/gsbraman/stp/releases/download/apache-1.0.0/apache-1.0.0.tgz
     version: 1.0.0
+  cronjob-prune-images:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2022-09-01T16:01:31.982307173Z"
+    description: Scheduled Task to Prune Images from Internal Docker Registry
+    digest: d9bfed73aeb230a1823bf24ab71169db9f7f49da52d23516019406aa89bda0f2
+    icon: https://dyclassroom.com/image/topic/reference-server/cron-job/cronjob.png
+    name: cronjob-prune-images
+    tags: management,cronjob,prune,images
+    urls:
+    - https://github.com/gsbraman/stp/releases/download/cronjob-prune-images-v0.0.1/cronjob-prune-images-v0.0.1.tgz
+    version: v0.0.1
   hogchart:
   - apiVersion: v2
     appVersion: 1.0.0
@@ -35,6 +47,18 @@ entries:
     type: application
     urls:
     - https://github.com/gsbraman/stp/releases/download/multus-demo-1.0.0/multus-demo-1.0.0.tgz
+    version: 1.0.0
+  qualys:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2022-09-01T16:01:32.160766515Z"
+    description: Qualys chart
+    digest: 72ccb8d8964c6be466ff79f398a87d0de204fed21f96771976ddb05a0d70f101
+    icon: https://seeklogo.com/images/Q/qualys-logo-4D3DB5E994-seeklogo.com.png
+    name: qualys
+    type: application
+    urls:
+    - https://github.com/gsbraman/stp/releases/download/qualys-1.0.0/qualys-1.0.0.tgz
     version: 1.0.0
   swagger:
   - apiVersion: v2
