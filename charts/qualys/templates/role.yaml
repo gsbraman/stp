@@ -2,7 +2,6 @@ kind: Role
 apiVersion: rbac.authorization.k8s.io/v1beta1
 metadata:
   name: qualys-agent-role
-  namespace: qualys-agent
 rules:
   - apiGroups: [""]
     resources: ["pods"]
