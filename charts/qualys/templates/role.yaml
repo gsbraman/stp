@@ -1,0 +1,18 @@
+kind: Role
+apiVersion: rbac.authorization.k8s.io/v1beta1
+metadata:
+  name: qualys-agent-role
+  namespace: qualys-agent
+rules:
+  - apiGroups: [""]
+    resources: ["pods"]
+    verbs: ["get", "list"]
+  - apiGroups: [""]
+    resources: ["pods/status"]
+    verbs: ["get"]
+  - apiGroups: ["apps"]
+    resources: ["daemonsets"]
+    verbs: ["get", "list"]
+  - apiGroups: ["apps"]
+    resources: ["daemonsets/status"]
+    verbs: ["get"]
