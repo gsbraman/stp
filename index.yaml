@@ -51,6 +51,17 @@ entries:
   qualys:
   - apiVersion: v2
     appVersion: 1.0.0
+    created: "2022-09-06T15:39:47.599430483Z"
+    description: Qualys chart
+    digest: e152fdc1da463e9370d665bc250d4efad8b9983821ceed5f219f6dd7133e72cb
+    icon: https://seeklogo.com/images/Q/qualys-logo-4D3DB5E994-seeklogo.com.png
+    name: qualys
+    type: application
+    urls:
+    - https://github.com/gsbraman/stp/releases/download/qualys-2.0.1/qualys-2.0.1.tgz
+    version: 2.0.1
+  - apiVersion: v2
+    appVersion: 1.0.0
     created: "2022-09-06T15:23:56.978440333Z"
     description: Qualys chart
     digest: aa84bcab31797f8efd932ea7ae1bd730374ca4fbabb395cbe7d86884d21e3647
