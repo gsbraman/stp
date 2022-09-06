@@ -30,13 +30,13 @@ spec:
           resources:
             limits:
               cpu: "0.2"
-          args:
+          args:            
             [
-              "--activation-id", "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
-              "--customer-id", "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+              "--activation-id", "ce4b9cc4-90cc-47c3-9236-db9d813e2105",
+              "--customer-id", "0a7883b5-3190-4381-8230-cd9929cf63d1",
               "--provider-name", "AUTO",
-              "--log-level", "5",
-              "--server-uri", "https://qagpublic.qg1.apps.qualys.com/CloudAgent"
+              "--log-level", "3",
+              "--server-uri", "https://qagpublic.qg4.apps.qualys.com/CloudAgent/"
             ]
           volumeMounts:
             - mountPath: /host_root
