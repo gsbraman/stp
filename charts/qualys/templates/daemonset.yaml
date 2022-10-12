@@ -5,6 +5,7 @@ metadata:
   namespace: qualys-agent
   labels:
     k8s-app: qualys-cloud-agent
+    name-app: scott
 spec:
   selector:
     matchLabels:
