@@ -11,6 +11,8 @@ jobs:
     steps:
       - name: node
         uses: actions/setup-node@v3
+        with:
+          node-version: '16'
       - name: Checkout        
         uses: actions/checkout@v2          
         with:
