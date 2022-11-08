@@ -35,19 +35,7 @@ entries:
     type: application
     urls:
     - https://github.com/gsbraman/stp/releases/download/hogchart-1.0.0/hogchart-1.0.0.tgz
-    version: 1.0.0
-  logging:
-  - apiVersion: v2
-    appVersion: 4.10.36
-    created: "2022-11-08T16:51:01.010500051Z"
-    description: A Helm chart for OpenShift
-    digest: ccda8a4aa462ed69ac63ccd0fe79bdf11923cb8136260f350e50225cf1338918
-    icon: https://cdn.icon-icons.com/icons2/2699/PNG/512/openshift_logo_icon_169886.png
-    name: logging
-    type: application
-    urls:
-    - https://github.com/gsbraman/stp/releases/download/logging-0.1.0/logging-0.1.0.tgz
-    version: 0.1.0
+    version: 1.0.0  
   multus-demo:
   - apiVersion: v2
     appVersion: 1.0.0
