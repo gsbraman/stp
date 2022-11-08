@@ -10,7 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     
-      - name: Checkout        
+      - name: Checkout
+        continue-on-error: true
         uses: actions/checkout@v2          
         with:
           fetch-depth: 0
