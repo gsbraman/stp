@@ -1,0 +1,7 @@
+apiVersion: v2
+name: logging
+description: A Helm chart for OpenShift
+icon: https://cdn.icon-icons.com/icons2/2699/PNG/512/openshift_logo_icon_169886.png
+type: application
+version: 0.1.0
+appVersion: "4.10.36"
