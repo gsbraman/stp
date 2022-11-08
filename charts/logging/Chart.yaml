@@ -1,7 +1,7 @@
 apiVersion: v2
-appVersion: "1.0.2"
-description: A Helm Chart for K8s
+name: logging
+description: OpenShift Logging
 icon: https://cdn.icon-icons.com/icons2/2699/PNG/512/openshift_logo_icon_169886.png
-name: Logging
 type: application
-version: 1.4.0
+version: "4.10.36"
+appVersion: "4.10.36"
