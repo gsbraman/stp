@@ -24,4 +24,4 @@ jobs:
         env:
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
         with:
-          node-version: 16
+          version: 16
