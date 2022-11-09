@@ -36,18 +36,7 @@ entries:
     urls:
     - https://github.com/gsbraman/stp/releases/download/hogchart-1.0.0/hogchart-1.0.0.tgz
     version: 1.0.0
-  logging:
-  - apiVersion: v2
-    appVersion: 4.10.36
-    created: "2022-11-08T21:35:06.992043616Z"
-    description: OpenShift Logging
-    digest: 435fd1c48b284cea0c2491a31ed7409f61799b093f91e3d212e4f464e7ee3912
-    icon: https://cdn.icon-icons.com/icons2/2699/PNG/512/openshift_logo_icon_169886.png
-    name: logging
-    type: application
-    urls:
-    - https://github.com/gsbraman/stp/releases/download/logging-4.10.36/logging-4.10.36.tgz
-    version: 4.10.36
+  logging:  
   - apiVersion: v2
     appVersion: 4.10.36
     created: "2022-11-09T00:05:03.778843713Z"
