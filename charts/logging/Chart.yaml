@@ -1,7 +1,7 @@
 apiVersion: v2
 name: logging
-description: OpenShift Logging
+description: OCP Version 4.10.36
 icon: https://cdn.icon-icons.com/icons2/2699/PNG/512/openshift_logo_icon_169886.png
 type: application
-version: "4.10.36"
+version: "1.0.0"
 appVersion: "4.10.36"
