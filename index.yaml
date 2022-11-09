@@ -1,5 +1,5 @@
 apiVersion: v1
-entries:  
+entries:
   apache:
   - apiVersion: v2
     appVersion: 1.0.0
@@ -48,6 +48,17 @@ entries:
     urls:
     - https://github.com/gsbraman/stp/releases/download/logging-4.10.36/logging-4.10.36.tgz
     version: 4.10.36
+  - apiVersion: v2
+    appVersion: 4.10.36
+    created: "2022-11-09T00:05:03.778843713Z"
+    description: OCP Version 4.10.36
+    digest: 6636f87f635e7ca4dbcd297fce072c56b68d402fe85384c80c7a70ce9893af27
+    icon: https://cdn.icon-icons.com/icons2/2699/PNG/512/openshift_logo_icon_169886.png
+    name: logging
+    type: application
+    urls:
+    - https://github.com/gsbraman/stp/releases/download/logging-1.0.0/logging-1.0.0.tgz
+    version: 1.0.0
   multus-demo:
   - apiVersion: v2
     appVersion: 1.0.0
