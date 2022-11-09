@@ -4,4 +4,4 @@ description: gRPC-Multus Application
 icon: https://cncf-branding.netlify.app/img/projects/grpc/horizontal/color/grpc-horizontal-color.png
 name: multus-demo
 type: application
-version: 1.0.0
+version: 1.0.1
