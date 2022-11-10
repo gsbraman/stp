@@ -39,6 +39,17 @@ entries:
   logging:
   - apiVersion: v2
     appVersion: 4.10.36
+    created: "2022-11-10T15:20:55.668317494Z"
+    description: OCP Version 4.10.36
+    digest: 41795dd2f73c7547d903d58d85f276ba79e35d1693cf03e3c787ec416af31d42
+    icon: https://cdn.icon-icons.com/icons2/2699/PNG/512/openshift_logo_icon_169886.png
+    name: logging
+    type: application
+    urls:
+    - https://github.com/gsbraman/stp/releases/download/logging-1.0.1/logging-1.0.1.tgz
+    version: 1.0.1
+  - apiVersion: v2
+    appVersion: 4.10.36
     created: "2022-11-09T00:05:03.778843713Z"
     description: OCP Version 4.10.36
     digest: 6636f87f635e7ca4dbcd297fce072c56b68d402fe85384c80c7a70ce9893af27
