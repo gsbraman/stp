@@ -1,0 +1,2 @@
+# Storage Class Used for Elasticsearch PVCs
+storageClassName: "managed-nfs-storage"

@@ -17,7 +17,7 @@ spec:
     elasticsearch:
       nodeCount: 3 
       storage:
-        storageClassName: "managed-nfs-storage" 
+        storageClassName: {{ .Values.storageClassName }} 
         size: 200G
       resources: 
         limits:
