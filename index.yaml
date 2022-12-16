@@ -62,6 +62,17 @@ entries:
   multus-demo:
   - apiVersion: v2
     appVersion: 1.0.0
+    created: "2022-12-16T04:53:08.924583611Z"
+    description: gRPC-Multus Application
+    digest: f8b6822863d1e783a1fd37b2e16534f1eb0233ce0ffdfb648b03053b354559f5
+    icon: https://cncf-branding.netlify.app/img/projects/grpc/horizontal/color/grpc-horizontal-color.png
+    name: multus-demo
+    type: application
+    urls:
+    - https://github.com/gsbraman/stp/releases/download/multus-demo-1.0.2/multus-demo-1.0.2.tgz
+    version: 1.0.2
+  - apiVersion: v2
+    appVersion: 1.0.0
     created: "2022-11-09T20:19:05.408405873Z"
     description: gRPC-Multus Application
     digest: 1246a16fc256aedebcedd1b2da4e3f02355440cf89cadf2027a3eab576780064
@@ -93,7 +104,7 @@ entries:
     type: application
     urls:
     - https://github.com/gsbraman/stp/releases/download/qualys-2.0.2/qualys-2.0.2.tgz
-    version: 2.0.2  
+    version: 2.0.2
   swagger:
   - apiVersion: v2
     appVersion: 1.0.0
