@@ -159,6 +159,17 @@ entries:
   swagger:
   - apiVersion: v2
     appVersion: 1.0.0
+    created: "2023-04-26T12:56:19.655201337Z"
+    description: Explore the OpenShift 4.11.0 APIs with SwaggerUI
+    digest: c4e744e315a78718f272adcfd11c5b5ba5594380d3bab6135a39823cf9c2c258
+    icon: https://seeklogo.com/images/S/swagger-logo-A49F73BAF4-seeklogo.com.png
+    name: swagger
+    type: application
+    urls:
+    - https://github.com/gsbraman/stp/releases/download/swagger-4.0.0/swagger-4.0.0.tgz
+    version: 4.0.0
+  - apiVersion: v2
+    appVersion: 1.0.0
     created: "2023-04-04T02:22:14.385842775Z"
     description: Explore the OpenShift 4.11.0 APIs with SwaggerUI
     digest: 5f8a721795384cbc244f1cb8064f65ac2d1cd8624504e9afb24d7e3efba1e6f2
