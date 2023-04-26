@@ -108,6 +108,16 @@ entries:
   rahul:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2023-04-26T12:00:00.73183686Z"
+    description: A Helm chart for Kubernetes
+    digest: 29fadef7bd8c29c52841927dad9725840670cb94eb6f5669f1c64d747300f508
+    name: rahul
+    type: application
+    urls:
+    - https://github.com/gsbraman/stp/releases/download/rahul-0.2.0/rahul-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2023-04-26T11:57:23.378635964Z"
     description: A Helm chart for Kubernetes
     digest: 66714ec37119398dce175135889ebf1826f07b288887db1b7c2dd47f31f8349f
