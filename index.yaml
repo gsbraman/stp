@@ -105,6 +105,17 @@ entries:
     urls:
     - https://github.com/gsbraman/stp/releases/download/qualys-2.0.2/qualys-2.0.2.tgz
     version: 2.0.2
+  rahul:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-04-26T11:57:23.378635964Z"
+    description: A Helm chart for Kubernetes
+    digest: 66714ec37119398dce175135889ebf1826f07b288887db1b7c2dd47f31f8349f
+    name: rahul
+    type: application
+    urls:
+    - https://github.com/gsbraman/stp/releases/download/rahul-0.1.0/rahul-0.1.0.tgz
+    version: 0.1.0
   swagger:
   - apiVersion: v2
     appVersion: 1.0.0
