@@ -104,8 +104,19 @@ entries:
     type: application
     urls:
     - https://github.com/gsbraman/stp/releases/download/qualys-2.0.2/qualys-2.0.2.tgz
-    version: 2.0.2  
+    version: 2.0.2
   swagger:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2023-04-27T22:19:20.997545928Z"
+    description: Explore the OpenShift 4.11.0 APIs with SwaggerUI
+    digest: e63275ac3c4c752dbc3911a949416bd32a6905980c76b7ea586d5c3900d99ccf
+    icon: https://seeklogo.com/images/S/swagger-logo-A49F73BAF4-seeklogo.com.png
+    name: swagger
+    type: application
+    urls:
+    - https://github.com/gsbraman/stp/releases/download/swagger-7.0.0/swagger-7.0.0.tgz
+    version: 7.0.0
   - apiVersion: v2
     appVersion: 1.0.0
     created: "2023-04-27T21:36:20.801119433Z"
