@@ -6,6 +6,7 @@ metadata:
     app: swagger-openshift
     owner: sbraman
     vendor: stp
+    drink: {{ .Values.favoriteDrink }}
 spec:
   restartPolicy: Always
   containers:
