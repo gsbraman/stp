@@ -15,7 +15,7 @@ spec:
     resources:
       requests:
         memory: {{ .Values.containerRequestsMemory }}
-        cpu: "200m" {{ .Values.containerRequestsCpu }}
+        cpu: {{ .Values.containerRequestsCpu }}
       limits:
         memory: {{ .Values.containerLimitsMemory }}
         cpu: {{ .Values.containerLimitsCpu }}
