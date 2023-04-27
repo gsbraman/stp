@@ -10,7 +10,7 @@ spec:
   restartPolicy: {{ .Values.restartPolicy }}
   containers:
   - name: {{ .Values.containerName }}
-    image: quay.io/sbraman/swagger-openshift:v1
+    image: {{ .Values.containerImage }}
     imagePullPolicy: {{ .Values.imagePullPolicy }}
     resources:
       requests:
