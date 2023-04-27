@@ -1,2 +1,11 @@
-favoriteDrink: coffee
+name: swagger
+app: swagger-openshift
+owner: sbraman
+vendor: stp
 imagePullPolicy: Always
+restartPolicy: Always
+containerName: swagger
+containerRequestsMemory: "100Mi"
+containerRequestsCpu: "200m"
+containerLimitsMemory: "200Mi"
+containerLimitsCpu: "300m"

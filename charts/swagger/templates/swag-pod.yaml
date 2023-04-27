@@ -1,25 +1,24 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: swagger
+  name: {{ .Values.name }}
   labels:
-    app: swagger-openshift
-    owner: sbraman
-    vendor: stp
-    drink: {{ .Values.favoriteDrink }}
+    app: {{ .Values.app }}
+    owner: {{ .Values.owner }}
+    vendor: {{ .Values.vendor }}    
 spec:
-  restartPolicy: Always
+  restartPolicy: {{ .Values.restartPolicy }}
   containers:
-  - name: swagger
+  - name: {{ .Values.containerName }}
     image: quay.io/sbraman/swagger-openshift:v1
     imagePullPolicy: {{ .Values.imagePullPolicy }}
     resources:
       requests:
-        memory: "100Mi"
-        cpu: "200m"
+        memory: {{ .Values.containerRequestsMemory }}
+        cpu: "200m" {{ .Values.containerRequestsCpu }}
       limits:
-        memory: "200Mi"
-        cpu: "300m"
+        memory: {{ .Values.containerLimitsMemory }}
+        cpu: {{ .Values.containerLimitsCpu }}
     env:
     - name: BASE_URL
       value: "/swagger" 
