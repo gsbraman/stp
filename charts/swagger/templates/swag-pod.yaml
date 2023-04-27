@@ -12,7 +12,7 @@ spec:
   containers:
   - name: swagger
     image: quay.io/sbraman/swagger-openshift:v1
-    imagePullPolicy: Always
+    imagePullPolicy: {{ .Values.imagePullPolicy }}
     resources:
       requests:
         memory: "100Mi"
