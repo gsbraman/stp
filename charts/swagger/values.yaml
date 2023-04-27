@@ -5,7 +5,7 @@ vendor: stp
 imagePullPolicy: Always
 restartPolicy: Always
 containerName: swagger
-containerImage: quay.io/sbraman/swagger-openshift:v1
+containerImage: "quay.io/sbraman/swagger-openshift:v1"
 containerRequestsMemory: "100Mi"
 containerRequestsCpu: "200m"
 containerLimitsMemory: "200Mi"
