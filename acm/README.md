@@ -1,11 +1,11 @@
 ## ACM
 
 #### Steps Required to Integrate OpenShift GitOps into RHACM "hub" clusterset
-Create managed cluster set binding to the namespace where gitops was installed, normally `openshift-gitops`
+Create ManagedClusterSetBinding to the gitops namespace, normally `openshift-gitops`
 ```
 oc create -f managedclustersetbinding.yaml
 ```
-Create placement in the namespace where gitops was installed, normally `openshift-gitops`
+Create placement in the gitops namespace
 ```
 oc create -f placement-hub-gitops.yaml
 ```
