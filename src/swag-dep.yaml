@@ -22,7 +22,7 @@ spec:
       restartPolicy: Always
       containers: 
       - name: swagger
-        image: quay.io/sbraman/swagger-openshift:v1
+        image: "quay.io/sbraman/swagger-openshift:v1"
         imagePullPolicy: Always
         resources:
           requests:
@@ -38,15 +38,15 @@ spec:
           value: "/ocp-4-11-0.json"
         ports:
         - containerPort: 8080
-        readinessProbe:
-          exec:
-            command:
-            - cat
-            - /etc/hosts
-          initialDelaySeconds: 5  
-        livenessProbe:
-          exec:
-            command:
-            - cat
-            - /etc/hosts
-          initialDelaySeconds: 5
+        #readinessProbe:
+          #exec:
+            #command:
+            #- cat
+            #- /etc/hosts
+          #initialDelaySeconds: 5  
+        #livenessProbe:
+          #exec:
+            #command:
+            #- cat
+            #- /etc/hosts
+          #initialDelaySeconds: 5
