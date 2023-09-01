@@ -24,15 +24,6 @@ spec:
               - openshift-ingress
           remediationAction: inform
           severity: low
-status:
-  compliant: Compliant
-  placement:
-    - placement: certificate-expiry-placement
-      placementBinding: certificate-expiry-placement
-  status:
-    - clustername: local-cluster
-      clusternamespace: local-cluster
-      compliant: Compliant
 ---
 apiVersion: cluster.open-cluster-management.io/v1beta1
 kind: Placement
