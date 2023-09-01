@@ -33,13 +33,13 @@ spec:
 apiVersion: policy.open-cluster-management.io/v1
 kind: PlacementBinding
 metadata:
-  name: binding-limitclusteradmin
+  name: limitclusteradmin-placement
 placementRef:
-  name: placement-limitclusteradmin
-  kind: PlacementRule
-  apiGroup: apps.open-cluster-management.io
+  name: limitclusteradmin-placement
+  kind: Placement
+  apiGroup: cluster.open-cluster-management.io
 subjects:
-- name: limitclusteradmin
-  kind: Policy
-  apiGroup: policy.open-cluster-management.io
+  - name: limitclusteradmin
+    apiGroup: policy.open-cluster-management.io
+    kind: Policy
 ...
