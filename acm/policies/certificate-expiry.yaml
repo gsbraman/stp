@@ -1,0 +1,59 @@
+apiVersion: policy.open-cluster-management.io/v1
+kind: Policy
+metadata:
+  name: certificate-expiry
+  namespace: acm-policies
+  annotations:
+    policy.open-cluster-management.io/categories: SC System and Communications Protection
+    policy.open-cluster-management.io/controls: SC-8 Transmission Confidentiality and Integrity
+    policy.open-cluster-management.io/standards: NIST SP 800-53  
+spec:
+  disabled: false
+  policy-templates:
+    - objectDefinition:
+        apiVersion: policy.open-cluster-management.io/v1
+        kind: CertificatePolicy
+        metadata:
+          name: policy-certificate
+        spec:
+          minimumDuration: 300h
+          namespaceSelector:
+            exclude: []
+            include:
+              - openshift-console
+              - openshift-ingress
+          remediationAction: inform
+          severity: low
+status:
+  compliant: Compliant
+  placement:
+    - placement: certificate-expiry-placement
+      placementBinding: certificate-expiry-placement
+  status:
+    - clustername: local-cluster
+      clusternamespace: local-cluster
+      compliant: Compliant
+---
+apiVersion: cluster.open-cluster-management.io/v1beta1
+kind: Placement
+metadata:
+  name: certificate-expiry-placement
+  namespace: acm-policies  
+spec:
+  clusterSets:
+    - hub
+---
+apiVersion: policy.open-cluster-management.io/v1
+kind: PlacementBinding
+metadata:
+  name: certificate-expiry-placement
+  namespace: acm-policies  
+placementRef:
+  name: certificate-expiry-placement
+  apiGroup: cluster.open-cluster-management.io
+  kind: Placement
+subjects:
+  - name: certificate-expiry
+    apiGroup: policy.open-cluster-management.io
+    kind: Policy
+...
