@@ -20,6 +20,7 @@ spec:
           severity: medium
           remediationAction: inform # the policy-template spec.remediationAction is overridden by the preceding parameter value for spec.remediationAction.
           maxClusterRoleBindingUsers: 1
+---
 apiVersion: cluster.open-cluster-management.io/v1beta1
 kind: Placement
 metadata:
