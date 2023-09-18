@@ -1,0 +1,8 @@
+apiVersion: metallb.io/v1beta1
+kind: L2Advertisement
+metadata:
+  name: pool1-l2     # <---- any name you want
+  namespace: metallb-system
+spec:
+  ipAddressPools:
+  - metallb-pool-1   # <---- advertise this IPAddressPool (from step #1)
