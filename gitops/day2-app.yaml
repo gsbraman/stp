@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:  
-  name: day2-cluster-configs
+  name: master-app
   namespace: openshift-gitops
   labels:
     appgrp: day2
