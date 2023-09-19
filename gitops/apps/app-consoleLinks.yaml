@@ -14,7 +14,7 @@ spec:
   source:
     directory:
       recurse: true
-    path: src/consolelinks
+    path: src/console-links
     repoURL: https://github.com/gsbraman/stp
     targetRevision: HEAD
   syncPolicy:

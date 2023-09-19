@@ -14,7 +14,7 @@ spec:
   source:
     directory:
       recurse: true
-    path: src/helmrepos
+    path: src/helm-repos
     repoURL: https://github.com/gsbraman/stp
     targetRevision: HEAD
   syncPolicy:
