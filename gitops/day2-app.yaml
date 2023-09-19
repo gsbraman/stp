@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:  
-  name: helmrepos
+  name: day2-cluster-configs
   namespace: openshift-gitops
   labels:
     appgrp: day2
@@ -14,7 +14,7 @@ spec:
   source:
     directory:
       recurse: true
-    path: src/helmrepos
+    path: gitops/apps
     repoURL: https://github.com/gsbraman/stp
     targetRevision: HEAD
   syncPolicy:
