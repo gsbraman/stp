@@ -1,12 +1,3 @@
----
-apiVersion: operators.coreos.com/v1
-kind: OperatorGroup
-metadata:
-  name: metallb-operator
-  namespace: metallb-system
-  annotations:
-    argocd.argoproj.io/hook: PreSync
----
 apiVersion: operators.coreos.com/v1alpha1
 kind: Subscription
 metadata:
@@ -19,4 +10,3 @@ spec:
   name: metallb-operator
   source: redhat-operators 
   sourceNamespace: openshift-marketplace
-...
