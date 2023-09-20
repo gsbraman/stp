@@ -15,9 +15,9 @@ spec:
     chart: hogchart    
   destination:
     server: https://kubernetes.default.svc
-    namespace: default
+    namespace: grpc
   syncPolicy:
     automated:
       selfHeal: true
-    #syncOptions:
-    #- CreateNamespace=true
+    syncOptions:
+    - CreateNamespace=true
