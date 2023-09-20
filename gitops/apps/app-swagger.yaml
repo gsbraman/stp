@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: swagger
+  namespace: openshift-gitops
+  labels:
+    appgrp: day2
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  project: default
+  source:
+    repoURL: https://gsbraman.github.io/stp/
+    targetRevision: 7.0.3
+    chart: swagger    
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: swagger
+  syncPolicy:
+    automated:
+      selfHeal: true
+    syncOptions:
+    - CreateNamespace=true
