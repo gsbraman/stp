@@ -3,6 +3,8 @@ kind: Application
 metadata:
   name: grpc-hog
   namespace: openshift-gitops
+  labels:
+    appgrp: day2
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
