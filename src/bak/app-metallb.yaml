@@ -8,16 +8,19 @@ metadata:
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
-  destination:    
+  destination:
+    #namespace: day2
     server: https://kubernetes.default.svc
   project: default
   source:
     directory:
       recurse: true
-    path: src/metalLB
+    path: src/metallb
     repoURL: https://github.com/gsbraman/stp
     targetRevision: HEAD
   syncPolicy:
     automated:
       prune: true
       selfHeal: true
+    #syncOptions:
+    #- CreateNamespace=true
