@@ -3,6 +3,8 @@ kind: AddressPool
 metadata:
   namespace: metallb-system
   name: metallb-pool-1
+  annotations:
+    argocd.argoproj.io/sync-wave: "5"
 spec:
   protocol: layer2
   addresses:
