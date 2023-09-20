@@ -3,6 +3,7 @@ kind: OperatorGroup
 metadata:
   name: acm-operator-group
   annotations:
+    argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
     argocd.argoproj.io/sync-wave: "2"
   finalizers:
   - resources-finalizer.argocd.argoproj.io 
