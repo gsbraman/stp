@@ -3,7 +3,7 @@ kind: Namespace
 metadata:
   name: metallb-system
   annotations:
-    argocd.argoproj.io/hook: PreSync    
+    argocd.argoproj.io/sync-wave: "1"   
 spec:
   finalizers:
   - kubernetes
