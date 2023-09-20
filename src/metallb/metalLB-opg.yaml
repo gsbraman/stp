@@ -3,5 +3,5 @@ kind: OperatorGroup
 metadata:
   name: metallb-operator
   namespace: metallb-system
-  #annotations:
-    #argocd.argoproj.io/hook: PreSync
+  annotations:
+    argocd.argoproj.io/hook: PreSync
