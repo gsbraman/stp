@@ -9,5 +9,5 @@ kind: Kustomization
   #app: hello
 
 resources:
-- /home/sbraman/gitops/operators/gitops/resources/openshift-gitops-sub.yaml
-- /home/sbraman/gitops/operators/gitops/resources/openshift-gitops-crb.yaml
+- resources/openshift-gitops-sub.yaml
+- resources/openshift-gitops-crb.yaml
