@@ -12,8 +12,8 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    directory:
-      recurse: true
+    #directory:
+      #recurse: true
     path: src/console-links
     repoURL: https://github.com/gsbraman/stp
     targetRevision: HEAD
