@@ -3,7 +3,7 @@ kind: Namespace
 metadata:
   name: metallb-system
   annotations:
-    argocd.argoproj.io/sync-wave: "1"   
+    argocd.argoproj.io/sync-wave: "0"    
 spec:
   finalizers:
   - kubernetes

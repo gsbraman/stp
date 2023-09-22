@@ -4,5 +4,5 @@ metadata:
   name: metallb
   namespace: metallb-system
   annotations:
-    argocd.argoproj.io/sync-wave: "4"
+    argocd.argoproj.io/sync-wave: "3"
     #argocd.argoproj.io/hook: PreSync

@@ -4,7 +4,7 @@ metadata:
   name: pool1-l2     # <---- any name you want
   namespace: metallb-system
   annotations:
-    argocd.argoproj.io/sync-wave: "6"
+    argocd.argoproj.io/sync-wave: "5"
 spec:
   ipAddressPools:
   - metallb-pool-1   # <---- advertise this IPAddressPool (from step #1)
