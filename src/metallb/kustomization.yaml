@@ -1,0 +1,13 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+commonLabels:
+  env: dev
+commonAnnotations:
+  argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
+resources:
+- 00-metalLB-ns.yaml
+- 01-metalLB-opg.yaml
+- 02-metalLB-sub.yaml
+- 03-metalLB-inst.yaml
+- 04-metalLB-pool.yaml
+- 05-metalLB-l2add.yaml
