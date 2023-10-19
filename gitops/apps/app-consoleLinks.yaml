@@ -2,8 +2,8 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:  
   name: console-links
-  namespace: ocp-gitops
-  #namespace: openshift-gitops
+  #namespace: ocp-gitops
+  namespace: openshift-gitops
   labels:
     appgrp: day2
   finalizers:

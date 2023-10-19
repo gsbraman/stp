@@ -10,7 +10,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:  
   name: demo-apps
-  namespace: ocp-gitops
+  namespace: openshift-gitops
   labels:
     appgrp: demo-apps  
 spec:
@@ -24,7 +24,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: swagger
-  namespace: ocp-gitops
+  namespace: openshift-gitops
   labels:
     appgrp: demo-apps  
 spec:
