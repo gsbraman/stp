@@ -4,7 +4,7 @@ kind: Namespace
 metadata:
   name: swagger-demo
   labels:
-    argocd.argoproj.io/managed-by: ocp-gitops
+    argocd.argoproj.io/managed-by: openshift-gitops
 ---
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
