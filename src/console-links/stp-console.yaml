@@ -4,7 +4,7 @@ metadata:
   name: stp-console-menu
   labels:
     appgrp: day2
-    #owner: sbraman
+    owner: sbraman
 spec:
   applicationMenu:
     imageURL: 'https://i.ibb.co/pZ0Lxdb/Logo-Red-Hat-Hat-Color-RGB.png'
