@@ -14,7 +14,7 @@ metadata:
   #namespace: openshift-gitops
   labels:
     appgrp: demo-app
-    owner: sbraman  
+    owner: gsb 
 spec:
   destinations:
     - namespace: swagger-demo      
