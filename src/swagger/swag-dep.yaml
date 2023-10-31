@@ -16,7 +16,7 @@ spec:
     metadata:          
       labels:
         app: swagger
-        owner: gsb
+        owner: sbraman
     spec:
       restartPolicy: Always
       containers: 
