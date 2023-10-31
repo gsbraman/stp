@@ -4,10 +4,10 @@ metadata:
   name: swagger-deployment
   labels:
     app: swagger
-    owner: sbraman
+    owner: gsb
     group: appdev
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: swagger
