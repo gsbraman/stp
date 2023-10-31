@@ -5,8 +5,7 @@ metadata:
   namespace: ocp-gitops
   #namespace: openshift-gitops
   labels:
-    appgrp: demo-app
-    owner: sbraman
+    appgrp: demo-app    
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
