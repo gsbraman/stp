@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:  
-  name: console-links
+  name: app1-console-links
   namespace: ocp-gitops
   #namespace: openshift-gitops
   labels:
