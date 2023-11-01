@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:  
-  name: helm-repos
+  name: app2-helm-repos
   namespace: ocp-gitops
   #namespace: openshift-gitops
   labels:
