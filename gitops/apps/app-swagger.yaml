@@ -32,7 +32,9 @@ metadata:
   namespace: ocp-gitops
   #namespace: openshift-gitops
   labels:
-    appgrp: demo-apps  
+    appgrp: demo-apps
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
 spec:
   project: demo-apps
   source:
