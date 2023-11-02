@@ -15,7 +15,9 @@ metadata:
   #namespace: openshift-gitops
   labels:
     appgrp: demo-app
-    owner: gsb 
+    owner: gsb
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
 spec:
   destinations:
     - namespace: swagger-demo      
