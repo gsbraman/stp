@@ -6,7 +6,7 @@ metadata:
   #namespace: openshift-gitops
   labels:
     appgrp: day2
-    argocd.argoproj.io/managed-by: ocp-gitops
+    #argocd.argoproj.io/managed-by: ocp-gitops
   #finalizers:
   #- resources-finalizer.argocd.argoproj.io
   
