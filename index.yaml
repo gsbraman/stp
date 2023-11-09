@@ -27,6 +27,17 @@ entries:
   hogchart:
   - apiVersion: v2
     appVersion: 1.0.0
+    created: "2023-11-09T17:28:14.99559138Z"
+    description: A Helm chart for Kubernetes
+    digest: c04af95a831b9c84a5dec97bb61d09f8c91a7336f28a47e0df2cf31b1db9759c
+    icon: https://cncf-branding.netlify.app/img/projects/grpc/horizontal/black/grpc-horizontal-black.png
+    name: hogchart
+    type: application
+    urls:
+    - https://github.com/gsbraman/stp/releases/download/hogchart-1.0.3/hogchart-1.0.3.tgz
+    version: 1.0.3
+  - apiVersion: v2
+    appVersion: 1.0.0
     created: "2023-06-14T17:03:32.735477955Z"
     description: A Helm chart for Kubernetes
     digest: 2b735f7dbe0d939fe6829107da28f6eb86fad5edf1babc2fcec319cdad519afe
