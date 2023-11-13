@@ -11,8 +11,8 @@ apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:  
   name: demo-apps
-  #namespace: ocp-gitops
-  namespace: openshift-gitops
+  namespace: ocp-gitops
+  #namespace: openshift-gitops
   labels:
     appgrp: demo-app
     owner: gsb
@@ -29,8 +29,8 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: app3-swagger
-  #namespace: ocp-gitops
-  namespace: openshift-gitops
+  namespace: ocp-gitops
+  #namespace: openshift-gitops
   labels:
     appgrp: demo-apps
   #finalizers:
