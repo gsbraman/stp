@@ -5,7 +5,7 @@ metadata:
   labels:
     app: swagger
     owner: sbraman
-    #group: us-east-2
+    group: us-east-2
 spec:
   replicas: 2
   selector:
