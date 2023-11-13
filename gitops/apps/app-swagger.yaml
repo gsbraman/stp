@@ -38,14 +38,16 @@ metadata:
 spec:
   project: demo-apps
   source:
-    repoURL: https://gsbraman.github.io/stp/    
-    chart: swagger
-    targetRevision: 7.0.3  # chart version
-    # override default values in values.yaml
-    helm:
-      values: |        
-        containerLimitsCpu: "400m"
-        containerLimitsMemory: "300Mi"       
+    repoURL: https://gsbraman.github.io/stp/
+    path: src/swagger
+    targetRevision: HEAD
+    #chart: swagger
+    #targetRevision: 7.0.3  # chart version
+    ## override default values in values.yaml
+    #helm:
+      #values: |        
+        #containerLimitsCpu: "400m"
+        #containerLimitsMemory: "300Mi"       
   destination:    
     server: https://kubernetes.default.svc
     namespace: swagger-demo
