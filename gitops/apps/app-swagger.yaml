@@ -38,9 +38,11 @@ metadata:
 spec:
   project: demo-apps
   source:
-    repoURL: https://gsbraman.github.io/stp/
+    repoURL: https://github.com/gsbraman/stp
     path: src/swagger
     targetRevision: HEAD
+    ## BELOW is to use the helm chart
+    #repoURL: https://gsbraman.github.io/stp/
     #chart: swagger
     #targetRevision: 7.0.3  # chart version
     ## override default values in values.yaml
