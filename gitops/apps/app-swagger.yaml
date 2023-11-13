@@ -24,6 +24,7 @@ spec:
       server: 'https://kubernetes.default.svc'
   sourceRepos:
     - 'https://gsbraman.github.io/stp/'
+    - 'https://github.com/gsbraman/stp'
 ---
 apiVersion: argoproj.io/v1alpha1
 kind: Application
