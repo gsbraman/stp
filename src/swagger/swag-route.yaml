@@ -3,8 +3,9 @@ apiVersion: route.openshift.io/v1
 metadata:
   name: swagger
   labels:
-    app: swagger
+    app: swagger    
     owner: sbraman
+    group: us-east-2
 spec:  
   path: /swagger
   to:
