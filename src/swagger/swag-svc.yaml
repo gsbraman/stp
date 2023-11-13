@@ -5,6 +5,7 @@ metadata:
   labels:
     app: swagger
     owner: sbraman
+    group: us-east-2
 spec:
   type: ClusterIP
   selector:
