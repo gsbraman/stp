@@ -18,8 +18,8 @@ metadata:
   labels:
     appgrp: demo-app
     owner: gsb
-  finalizers:
-  - resources-finalizer.argocd.argoproj.io
+  #finalizers:
+  #- resources-finalizer.argocd.argoproj.io
 spec:
   destinations:
     - namespace: swagger-demo      
@@ -36,8 +36,8 @@ metadata:
   #namespace: openshift-gitops
   labels:
     appgrp: demo-apps
-  finalizers:
-  - resources-finalizer.argocd.argoproj.io
+  #finalizers:
+  #- resources-finalizer.argocd.argoproj.io
 spec:
   project: demo-apps
   source:
