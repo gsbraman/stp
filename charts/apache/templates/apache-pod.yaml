@@ -5,6 +5,7 @@ metadata:
   labels:
     app: apache-openshift
     owner: sbraman
+    team: devops
 spec:
   restartPolicy: Always
   containers:
