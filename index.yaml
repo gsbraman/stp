@@ -3,6 +3,17 @@ entries:
   apache:
   - apiVersion: v2
     appVersion: 1.0.0
+    created: "2024-04-02T00:13:56.762747Z"
+    description: OpenShift Installation Apache Server
+    digest: 2032e9b0f25209f611e65515d604d06d88198542b64b20a517cb83de64ca5f07
+    icon: https://upload.wikimedia.org/wikipedia/commons/4/45/Apache_HTTP_server_logo_%282016%29.png
+    name: apache
+    type: application
+    urls:
+    - https://github.com/gsbraman/stp/releases/download/apache-1.0.2/apache-1.0.2.tgz
+    version: 1.0.2
+  - apiVersion: v2
+    appVersion: 1.0.0
     created: "2024-04-01T21:29:31.29021614Z"
     description: OpenShift Installation Apache Server
     digest: 2e41160c74c6a839f328c82a026577f36ce43cefab147f7db7cb3be0a4c60258
@@ -12,4 +23,4 @@ entries:
     urls:
     - https://github.com/gsbraman/stp/releases/download/apache-1.0.1/apache-1.0.1.tgz
     version: 1.0.1
-generated: "2024-04-01T21:29:31.010113583Z"
+generated: "2024-04-02T00:13:56.762800349Z"
