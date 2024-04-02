@@ -1,7 +1,7 @@
 apiVersion: v2
-appVersion: 1.0.1
+appVersion: 1.0.2
 description: Scheduled Task to Prune Images from OCP Internal Registry
 icon: https://storage.googleapis.com/dycr-web/image/topic/reference-server/cron-job/cronjob.png
 name: cronjob-prune-images
-tags: management,cronjob,prune,images
-version: v0.0.3
+#tags: management,cronjob,prune,images
+version: v0.0.4
