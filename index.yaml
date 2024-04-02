@@ -25,6 +25,16 @@ entries:
     version: 1.0.1
   cronjob-prune-images:
   - apiVersion: v2
+    appVersion: 1.0.2
+    created: "2024-04-02T18:43:44.579718368Z"
+    description: Scheduled Task to Prune Images from OCP Internal Registry
+    digest: 1b25d417d99c76596f41071c6985f99ba3af98a56c1c2b4ab4ac0094150bfeb1
+    icon: https://storage.googleapis.com/dycr-web/image/topic/reference-server/cron-job/cronjob.png
+    name: cronjob-prune-images
+    urls:
+    - https://github.com/gsbraman/stp/releases/download/cronjob-prune-images-v0.0.4/cronjob-prune-images-v0.0.4.tgz
+    version: v0.0.4
+  - apiVersion: v2
     appVersion: 1.0.1
     created: "2024-04-02T18:33:26.268441773Z"
     description: Scheduled Task to Prune Images from OCP Internal Registry
@@ -69,4 +79,4 @@ entries:
     urls:
     - https://github.com/gsbraman/stp/releases/download/swagger-7.0.6/swagger-7.0.6.tgz
     version: 7.0.6
-generated: "2024-04-02T18:33:26.268457642Z"
+generated: "2024-04-02T18:43:44.579770575Z"
