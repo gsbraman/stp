@@ -2,6 +2,6 @@ apiVersion: v2
 name: apache
 description: OpenShift Installation Apache Server
 type: application
-version: 1.0.1
+version: 1.0.2
 appVersion: "1.0.0"
 icon: "https://upload.wikimedia.org/wikipedia/commons/4/45/Apache_HTTP_server_logo_%282016%29.png"
