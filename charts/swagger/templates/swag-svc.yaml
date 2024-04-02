@@ -4,7 +4,7 @@ metadata:
   name: swagger-service  
   labels:
     app: swagger-openshift
-    owner: shaun
+    owner: sbraman
 spec:
   type: ClusterIP
   selector:
