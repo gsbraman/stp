@@ -23,6 +23,18 @@ entries:
     urls:
     - https://github.com/gsbraman/stp/releases/download/apache-1.0.1/apache-1.0.1.tgz
     version: 1.0.1
+  cronjob-prune-images:
+  - apiVersion: v2
+    appVersion: 1.0.1
+    created: "2024-04-02T18:30:18.769200712Z"
+    description: Scheduled Task to Prune Images from Internal Docker Registry
+    digest: 6919cb0af2e1c8883463abb5b343966fbd7f5e399cefc6936a5b49ec2efd1938
+    icon: https://dyclassroom.com/image/topic/reference-server/cron-job/cronjob.png
+    name: cronjob-prune-images
+    tags: management,cronjob,prune,images
+    urls:
+    - https://github.com/gsbraman/stp/releases/download/cronjob-prune-images-v0.0.2/cronjob-prune-images-v0.0.2.tgz
+    version: v0.0.2
   swagger:
   - apiVersion: v2
     appVersion: 1.0.1
@@ -46,4 +58,4 @@ entries:
     urls:
     - https://github.com/gsbraman/stp/releases/download/swagger-7.0.6/swagger-7.0.6.tgz
     version: 7.0.6
-generated: "2024-04-02T16:48:27.380918638Z"
+generated: "2024-04-02T18:30:18.769217694Z"
