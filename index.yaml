@@ -23,4 +23,16 @@ entries:
     urls:
     - https://github.com/gsbraman/stp/releases/download/apache-1.0.1/apache-1.0.1.tgz
     version: 1.0.1
-generated: "2024-04-02T00:13:56.762800349Z"
+  swagger:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2024-04-02T00:17:35.98173431Z"
+    description: Explore the OpenShift 4.11.0 APIs with SwaggerUI
+    digest: f63e8e8b0451ebf4f9f48c4c9669db6ae94af7b91bb41092aca0417440838920
+    icon: https://seeklogo.com/images/S/swagger-logo-A49F73BAF4-seeklogo.com.png
+    name: swagger
+    type: application
+    urls:
+    - https://github.com/gsbraman/stp/releases/download/swagger-7.0.6/swagger-7.0.6.tgz
+    version: 7.0.6
+generated: "2024-04-02T00:17:35.981749148Z"
