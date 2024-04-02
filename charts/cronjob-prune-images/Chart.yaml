@@ -1,7 +1,7 @@
 apiVersion: v2
 appVersion: 1.0.1
-description: Scheduled Task to Prune Images from Internal Docker Registry
-icon: https://dyclassroom.com/image/topic/reference-server/cron-job/cronjob.png
+description: Scheduled Task to Prune Images from OCP Internal Registry
+icon: https://storage.googleapis.com/dycr-web/image/topic/reference-server/cron-job/cronjob.png
 name: cronjob-prune-images
 tags: management,cronjob,prune,images
-version: v0.0.2
+version: v0.0.3
