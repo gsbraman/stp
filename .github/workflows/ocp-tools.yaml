@@ -24,7 +24,7 @@ jobs:
         uses: redhat-actions/openshift-tools-installer@v1.12
         with: 
           helm: "latest"
-          oc: "latest"
+          oc: "4.15.17"
           
       - name: Check Client Versions
         shell: bash
