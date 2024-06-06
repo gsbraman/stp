@@ -42,7 +42,7 @@ jobs:
           OCP_API: ${{ secrets.OCP_API }}
         shell: bash
         run: |
-          oc login -u $OCP_USR -p $OCP_PWD $OCP_API:6443
+          oc login -u $OCP_USR -p $OCP_PWD $OCP_API
                 
         #env:
           #CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
