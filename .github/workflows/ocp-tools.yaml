@@ -3,12 +3,7 @@ on:
   push:
     branches: ['main']
     paths: ['src/swagger/*']
-
-#env:
-  #OCP_USR: ${{ secrets.OCP_USR }}
-  #OCP_PWD: ${{ secrets.OCP_PWD }}
-  #OCP_API: ${{ secrets.OCP_API }}
-
+    
 jobs:
   release:
     permissions:
