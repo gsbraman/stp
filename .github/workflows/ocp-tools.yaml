@@ -4,10 +4,10 @@ on:
     branches: ['main']
     paths: ['src/swagger/*']
 
-env:
-  OCP_USR: ${{ secrets.OCP_USR }}
-  OCP_PWD: ${{ secrets.OCP_PWD }}
-  OCP_API: ${{ secrets.OCP_API }}
+#env:
+  #OCP_USR: ${{ secrets.OCP_USR }}
+  #OCP_PWD: ${{ secrets.OCP_PWD }}
+  #OCP_API: ${{ secrets.OCP_API }}
 
 jobs:
   release:
@@ -44,13 +44,7 @@ jobs:
         env:
           OCP_USR: ${{secrets.OCP_USR}}
           OCP_PWD: ${{secrets.OCP_PWD}}
-          OCP_API: ${{secrets.OCP_API}}
-          #OCP_URL: "https://api.stp.aou5.p1.openshiftapps.com"
-          #OCP_PRT: 6443
+          OCP_API: ${{secrets.OCP_API}}          
         
-        shell: bash
-        #run: echo ${{secrets.OCP_USR}}
-        run: oc login -u '${{secrets.OCP_USR}}' -p '${{secrets.OCP_PWD}}' https://api.bosez-20240521.5nay.p1.openshiftapps.com:6443/
-                
-        #env:
-          #CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+        shell: bash       
+        run: oc login -u '${{secrets.OCP_USR}}' -p '${{secrets.OCP_PWD}}' https://api.bosez-20240521.5nay.p1.openshiftapps.com:6443/              
