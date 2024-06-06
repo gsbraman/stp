@@ -47,8 +47,8 @@ jobs:
           OCP_API: ${{secrets.OCP_API}}
         
         shell: bash
-        run: echo ${{secrets.OCP_USR}}
-        #run: oc login -u '${{secrets.OCP_USR}}' -p '${{secrets.OCP_PWD}}' '${{secrets.OCP_API}}'
+        #run: echo ${{secrets.OCP_USR}}
+        run: oc login -u '${{secrets.OCP_USR}}' -p '${{secrets.OCP_PWD}}' '${{secrets.OCP_API}}'
                 
         #env:
           #CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
