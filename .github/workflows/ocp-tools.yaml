@@ -19,6 +19,8 @@ jobs:
         run: |
           git config user.name "$GITHUB_ACTOR"
           git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
+        env:
+          CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"  
 
       - name: OpenShift Tools Installer
         uses: redhat-actions/openshift-tools-installer@v1.12
@@ -34,9 +36,13 @@ jobs:
           helm version
 
       - name: Login to OCP Cluster
+        env:
+          OCP_USR: ${{ secrets.OCP_USR }}
+          OCP_PWD: ${{ secrets.OCP_PWD }}
+          OCP_API: ${{ secrets.OCP_API }}
         shell: bash
         run: |
-          oc whoami
+          oc login -u $OCP_USR -p $OCP_PWD $OCP_API:6443
                 
-        env:
-          CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+        #env:
+          #CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
