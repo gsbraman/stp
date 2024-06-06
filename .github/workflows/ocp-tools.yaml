@@ -31,7 +31,12 @@ jobs:
         run: |
           set -x
           oc version
-          helm version   
+          helm version
+
+      - name: Login to OCP Cluster
+        shell: bash
+        run: |
+          oc whoami
                 
         env:
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
