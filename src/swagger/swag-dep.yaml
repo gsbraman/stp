@@ -4,7 +4,7 @@ metadata:
   name: swagger-deployment
   labels:
     app: swagger
-    owner: gsbraman
+    owner: sbraman
     group: us-east-2
 spec:
   revisionHistoryLimit: 0
