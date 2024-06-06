@@ -1,8 +1,8 @@
 name: OCP-Tools
 on:
   push:
-    branches:
-      - main
+    branches: ['main']
+    paths: ['src/swagger']
 
 jobs:
   release:
