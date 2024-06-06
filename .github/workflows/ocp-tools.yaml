@@ -50,7 +50,7 @@ jobs:
         
         shell: bash
         #run: echo ${{secrets.OCP_USR}}
-        run: oc login -u '${{secrets.OCP_USR}}' -p '${{secrets.OCP_PWD}}' '${OCP_URL}':'${OCP_PRT}'
+        run: oc login -u '${{secrets.OCP_USR}}' -p '${{secrets.OCP_PWD}}' '$OCP_URL':'$OCP_PRT'
                 
         #env:
           #CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
