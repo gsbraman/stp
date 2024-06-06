@@ -50,7 +50,7 @@ jobs:
         
         shell: bash
         #run: echo ${{secrets.OCP_USR}}
-        run: oc login -u '${{secrets.OCP_USR}}' -p '${{secrets.OCP_PWD}}' '{{secrets.OCP_API}}'
+        run: oc login -u '${{secrets.OCP_USR}}' -p '${{secrets.OCP_PWD}}' https://api.bosez-20240521.5nay.p1.openshiftapps.com:6443/
                 
         #env:
           #CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
