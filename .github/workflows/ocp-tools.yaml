@@ -4,6 +4,11 @@ on:
     branches: ['main']
     paths: ['src/swagger/*']
 
+env:
+  OCP_USR: ${{ secrets.OCP_USR }}
+  OCP_PWD: ${{ secrets.OCP_PWD }}
+  OCP_API: ${{ secrets.OCP_API }}
+
 jobs:
   release:
     permissions:
@@ -36,10 +41,10 @@ jobs:
           helm version
 
       - name: Login to OCP Cluster
-        env:
-          OCP_USR: ${{ secrets.OCP_USR }}
-          OCP_PWD: ${{ secrets.OCP_PWD }}
-          OCP_API: ${{ secrets.OCP_API }}
+        #env:
+          #OCP_USR: ${{ secrets.OCP_USR }}
+          #OCP_PWD: ${{ secrets.OCP_PWD }}
+          #OCP_API: ${{ secrets.OCP_API }}
         shell: bash
         run: |
           oc login -u ${OCP_USR} -p ${OCP_PWD} ${OCP_API}
