@@ -45,6 +45,6 @@ jobs:
 
       - name: Create new OCP namespace
         env:
-          OCP_PROJ: "bosez"                 
+          OCP_PROJ: bosez                 
         shell: bash        
-        run: oc new-project '$OCP_PROJ'
+        run: oc new-project $OCP_PROJ
