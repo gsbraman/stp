@@ -42,3 +42,9 @@ jobs:
           OCP_API: ${{secrets.OCP_API}}        
         shell: bash        
         run: oc login -u '${{secrets.OCP_USR}}' -p '${{secrets.OCP_PWD}}' '${{secrets.OCP_API}}' 
+
+      - name: Create new OCP namespace
+        env:
+          OCP_PROJ: "bosez"                 
+        shell: bash        
+        run: oc new-project '$OCP_PROJ'
