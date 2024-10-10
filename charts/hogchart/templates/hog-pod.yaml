@@ -5,6 +5,7 @@ metadata:
   labels:
     app: grpc
     role: grpc-hog
+    name: scott
 spec:
   restartPolicy: Always
   containers:
