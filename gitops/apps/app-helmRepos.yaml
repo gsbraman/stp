@@ -5,7 +5,8 @@ metadata:
   #namespace: ocp-gitops
   namespace: openshift-gitops
   labels:
-    appgrp: demo-app    
+    appgrp: demo-app
+    argocd.argoproj.io/managed-by: openshift-gitops
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
