@@ -1,6 +1,7 @@
 apiVersion: v2
-appVersion: 1.0.0
+appVersion: 1.1.0
 description: A Helm chart for Kubernetes
+icon: https://seeklogo.com/vector-logo/431107/helm
 name: hogchart
 type: application
-version: 1.0.7
+version: 1.0.8
