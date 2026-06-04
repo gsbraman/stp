@@ -58,6 +58,16 @@ entries:
     version: v0.0.2
   grpc:
   - apiVersion: v2
+    appVersion: 1.16.1
+    created: "2026-06-04T18:26:32.567060335Z"
+    description: gRPC Server Application
+    digest: ceac11e5ed2344ef128c47e6ab111e6facd5c2b7192c38c121c4e7607dbb9b51
+    name: grpc
+    type: application
+    urls:
+    - https://github.com/gsbraman/stp/releases/download/grpc-0.1.1/grpc-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
     appVersion: 1.16.0
     created: "2026-06-04T18:06:10.183956924Z"
     description: A Helm chart for Kubernetes
@@ -155,4 +165,4 @@ entries:
     urls:
     - https://github.com/gsbraman/stp/releases/download/swagger-7.0.6/swagger-7.0.6.tgz
     version: 7.0.6
-generated: "2026-06-04T18:06:10.18398159Z"
+generated: "2026-06-04T18:26:32.567101494Z"
