@@ -1,0 +1,54 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: {{ .Values.namespace }}
+  name: {{ .Values.name }}
+  labels:
+    app: {{ .Values.app }}
+    owner: {{ .Values.owner }}
+    vendor: {{ .Values.vendor }}
+spec:
+  revisionHistoryLimit: 0
+  replicas: 1
+  selector:
+    matchLabels:
+      app: swagger
+      owner: sbraman
+  template:
+    metadata:          
+      labels:
+        app: swagger
+        owner: sbraman
+    spec:
+      restartPolicy: {{ .Values.restartPolicy }}
+      containers: 
+      - name: {{ .Values.containerName }}
+        image: {{ .Values.containerImage }}
+        imagePullPolicy: {{ .Values.imagePullPolicy }}
+        #imagePullPolicy: IfNotPresent
+        resources:
+          requests:
+            memory: {{ .Values.containerRequestsMemory }}
+            cpu: {{ .Values.containerRequestsCpu }}
+          limits:
+            memory: {{ .Values.containerLimitsMemory }}
+            cpu: {{ .Values.containerLimitsCpu }}
+        env:
+        - name: BASE_URL          
+          value: "/swagger"
+        - name: SWAGGER_JSON
+          value: "/ocp-4-11-0.json"
+        ports:
+        - containerPort: 8080
+        readinessProbe:
+          exec:
+            command:
+            - cat
+            - /etc/hosts
+          initialDelaySeconds: 5  
+        livenessProbe:
+          exec:
+            command:
+            - cat
+            - /etc/hosts
+          initialDelaySeconds: 5
