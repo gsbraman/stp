@@ -3,7 +3,7 @@ name: Release Charts
 on:
   push:
     branches: ['main']
-    paths: ['charts']
+    paths: ['charts/**']
   workflow_dispatch:
 
 jobs:
