@@ -58,6 +58,16 @@ entries:
     version: v0.0.2
   hogchart:
   - apiVersion: v2
+    appVersion: 1.2.0
+    created: "2026-06-04T16:28:12.6970137Z"
+    description: A Helm chart for Kubernetes
+    digest: d3c9c13c8762e2a22c224a2720174bbdc66172fcf86557b796d3c121af2787c6
+    name: hogchart
+    type: application
+    urls:
+    - https://github.com/gsbraman/stp/releases/download/hogchart-1.0.9/hogchart-1.0.9.tgz
+    version: 1.0.9
+  - apiVersion: v2
     appVersion: 1.1.0
     created: "2026-06-04T16:25:56.525199948Z"
     description: A Helm chart for Kubernetes
@@ -134,4 +144,4 @@ entries:
     urls:
     - https://github.com/gsbraman/stp/releases/download/swagger-7.0.6/swagger-7.0.6.tgz
     version: 7.0.6
-generated: "2026-06-04T16:25:56.525226626Z"
+generated: "2026-06-04T16:28:12.697043847Z"
