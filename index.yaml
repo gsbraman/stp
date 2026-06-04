@@ -56,7 +56,30 @@ entries:
     urls:
     - https://github.com/gsbraman/stp/releases/download/cronjob-prune-images-v0.0.2/cronjob-prune-images-v0.0.2.tgz
     version: v0.0.2
+  hogchart:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2026-06-04T15:54:38.094471724Z"
+    description: A Helm chart for Kubernetes
+    digest: eabe298181cbf5e93426240538cfa572349dd75410c64235a3a9213939753cb2
+    icon: https://cncf-branding.netlify.app/img/projects/grpc/horizontal/black/grpc-horizontal-black.png
+    name: hogchart
+    type: application
+    urls:
+    - https://github.com/gsbraman/stp/releases/download/hogchart-1.0.5/hogchart-1.0.5.tgz
+    version: 1.0.5
   swagger:
+  - apiVersion: v2
+    appVersion: 1.0.4
+    created: "2026-06-04T15:54:38.2784546Z"
+    description: Explore the OpenShift 4.11.0 APIs with SwaggerUI
+    digest: 25e9c93db400334bde57f5309b34972cacb04d2666e188e5a65b54e9437d0709
+    icon: https://seeklogo.com/images/S/swagger-logo-A49F73BAF4-seeklogo.com.png
+    name: swagger
+    type: application
+    urls:
+    - https://github.com/gsbraman/stp/releases/download/swagger-7.0.10/swagger-7.0.10.tgz
+    version: 7.0.10
   - apiVersion: v2
     appVersion: 1.0.1
     created: "2024-04-02T16:48:27.380902938Z"
@@ -79,4 +102,4 @@ entries:
     urls:
     - https://github.com/gsbraman/stp/releases/download/swagger-7.0.6/swagger-7.0.6.tgz
     version: 7.0.6
-generated: "2024-04-02T18:43:44.579770575Z"
+generated: "2026-06-04T15:54:38.278478105Z"
