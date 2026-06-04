@@ -12,13 +12,13 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: swagger
-      owner: sbraman
+      app: {{ .Values.app }}
+      owner: {{ .Values.owner }}
   template:
     metadata:          
       labels:
-        app: swagger
-        owner: sbraman
+        app: {{ .Values.app }}
+        owner: {{ .Values.owner }}
     spec:
       restartPolicy: {{ .Values.restartPolicy }}
       containers: 
