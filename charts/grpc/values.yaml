@@ -4,7 +4,7 @@
 
 name: grpc
 namespace: default
-app: swagger-openshift
+app: grpc
 owner: sbraman
 vendor: stp
 #imagePullPolicy: Always
