@@ -39,7 +39,8 @@ spec:
         - name: SWAGGER_JSON
           value: "/ocp-4-11-0.json"
         ports:
-        - containerPort: 8080
+          - name: swagger-port
+            containerPort: 8080
         readinessProbe:
           exec:
             command:
