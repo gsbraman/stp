@@ -13,5 +13,5 @@ spec:
   ports:
   - name: swagger
     protocol: TCP
-    port: 9080
-    targetPort: 8080
+    port: 9080 # external facing port of the service
+    targetPort: 8080 # port swagger container is listening on
