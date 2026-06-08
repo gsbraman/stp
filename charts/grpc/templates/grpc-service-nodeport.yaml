@@ -14,7 +14,7 @@ spec:
     protocol: TCP
     port: 50051 
     targetPort: 50051
-    nodePort: 30007   # 30000-32767 (optional)
+    nodePort: 30020   # 30000-32767 (optional)
 
 # Test from external client:
 # cd /tmp/grpc-go/examples/helloworld/greeter_client/ && go run main.go && cd /home/sbraman/crc
