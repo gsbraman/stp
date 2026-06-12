@@ -18,4 +18,5 @@ spec:
     nodePort: 30030 # port opened / allocated on the nodes. Remove if below is set to false
   allocateLoadBalancerNodePorts: true 
   # some cloud LBs and F5 support this being set to false. In this case, traffic flows from
-  # the external LB to the target pod IPs directly and thus nodePort and Kube-Proxy are not required
+  # the external LB to the target pod IPs directly and thus nodePort and Kube-Proxy 
+  # are not required
