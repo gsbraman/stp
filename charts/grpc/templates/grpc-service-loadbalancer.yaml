@@ -11,7 +11,7 @@ metadata:
     #cis.f5.com/ipamLabel: test
 spec:
   type: LoadBalancer
-  #loadBalancerIP: 192.168.130.20       # <--- specify IP from pool range to use (optional)
+  #loadBalancerIP: 192.168.130.20  # <--- For metalLB, specify IP from pool range to use (optional)
   selector:
     role: grpc-server
   ports:
