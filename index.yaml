@@ -58,6 +58,16 @@ entries:
     version: v0.0.2
   grpc:
   - apiVersion: v2
+    appVersion: 1.16.6
+    created: "2026-06-12T19:44:33.051429732Z"
+    description: gRPC Server Application
+    digest: 15baae5ba3ef62e16e23ee9e3347f47c18e495b3abbfa666be2be088298b64ab
+    name: grpc
+    type: application
+    urls:
+    - https://github.com/gsbraman/stp/releases/download/grpc-0.1.6/grpc-0.1.6.tgz
+    version: 0.1.6
+  - apiVersion: v2
     appVersion: 1.16.5
     created: "2026-06-08T11:33:06.599516176Z"
     description: gRPC Server Application
@@ -238,4 +248,4 @@ entries:
     urls:
     - https://github.com/gsbraman/stp/releases/download/swagger-7.0.6/swagger-7.0.6.tgz
     version: 7.0.6
-generated: "2026-06-08T11:33:06.599562875Z"
+generated: "2026-06-12T19:44:33.051470575Z"
