@@ -13,6 +13,9 @@ spec:
   ports:
   - name: grpc-listen
     protocol: TCP
-    port: 30010
-    targetPort: 50051
-  allocateLoadBalancerNodePorts: true
+    port: 30010 # port exposed on the loadbalancer
+    targetPort: 50051 # port grpc server container is listening on
+    nodePort: 30030 # port opened / allocated on the nodes. Remove if below is set to false
+  allocateLoadBalancerNodePorts: true 
+  # some cloud LBs and F5 support this being set to false. In this case, traffic flows from
+  # the external LB to the target pod IPs directly and thus nodePort and Kube-Proxy are not required
